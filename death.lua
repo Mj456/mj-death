@@ -22,6 +22,12 @@ function drawTxt(x,y,width,height,scale, text, r,g,b,a, outline)
     DrawText(x - width/2, y - height/2 + 0.005)
 end
 
+function loadAnimDict(dict)
+    RequestAnimDict(dict)
+    while (not HasAnimDictLoaded(dict)) do        
+        Citizen.Wait(1)
+    end
+end
 
 function startT(source)
     local helth = GetEntityHealth(GetPlayerPed(-1))
