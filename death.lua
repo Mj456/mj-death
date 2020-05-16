@@ -32,7 +32,7 @@ end
 function startT(source)
     local helth = GetEntityHealth(GetPlayerPed(-1))
 	if secondsRemaining > 1 then 
- 	drawTxt(0.66, 1.4, 1.0,1.0,0.4, "~w~Dead! ~r~" .. secondsRemaining .. "~w~ seconds remaining untill you can respawn", 255, 255, 255, 255)
+ 	drawTxt(0.66, 1.4, 1.0,1.0,0.4, "~w~Dead! ~r~" .. secondsRemaining .. "~w~ seconds remaining until you can respawn", 255, 255, 255, 255)
 	end
    	if secondsRemaining < 1 then 
    drawTxt(0.66, 1.4, 1.0,1.0,0.4, "~w~Press ~w~[~r~E~w~] to respawn, or wait for EMS!", 255, 255, 255, 255)
